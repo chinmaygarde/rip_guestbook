@@ -1,0 +1,16 @@
+<h1>Editing entry</h1>
+<form action="/entry/<%= params[:id] %>" method="post" accept-charset="utf-8">
+	<input type="hidden" id="_method" name="_method" value="put" />
+	
+		<p>
+			<label for="name">Name</label><br />
+			<input type="text" name="entry[name]" value="<%= @entry.name %>" id="entry_name">
+		</p>		
+	
+		<p>
+			<label for="comment">Comment</label><br />
+			<input type="text" name="entry[comment]" value="<%= @entry.comment %>" id="entry_comment">
+		</p>		
+	
+	<p><input type="submit" value="Edit &rarr;"></p>
+</form>

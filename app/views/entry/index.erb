@@ -1,0 +1,28 @@
+<h1>ReST in Peace</h1>
+<table border="0">
+	<tr>
+		
+			<th>Name</th>
+		
+			<th>Comment</th>
+		
+
+	</tr>
+	<% @entrys.each do |entry| %>
+	<tr>
+	
+		<td><%= entry.name %></td>
+	
+		<td><%= entry.comment %></td>
+	
+	</tr>
+	<% end %>
+</table>
+<p>
+	<a href="/entry/new">Leave a comment</a>
+</p>
+
+<hr />
+
+<p>ReST in Peace is a minimal web framework with a focus on simplicity. It is powered by Sinatra and DataMapper. You can check it out <a href="http://github.com/chinmaygarde/rested_db">here</a> (will change the name soon).</p>
+<p>This simple Guestbook application is the very first one built with ReST in Peace</p>
